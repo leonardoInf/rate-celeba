@@ -12,7 +12,6 @@ app.get("/img", (req, res) => {
   });
 });
 
-
 app.post("/img", (req, res) => {
   const name = req.body.name;
   const rating = req.body.rating;
@@ -26,8 +25,5 @@ app.post("/img", (req, res) => {
 });
 
 app.listen(setup.PORT, "0.0.0.0", () => {
-  console.log(`Listening at http://0.0.0.0:${setup.PORT}`);
-  if(!fileOps.celebaExists()){
-    throw "Please download the celeba align img database at: shorturl.at/jqsQR";
-  }
+  setup.init();
 });

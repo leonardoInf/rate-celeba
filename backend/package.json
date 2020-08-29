@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd .. && yarn install && yarn build && node backend/server.js"
+    "build": "cd .. && yarn install && yarn build && cd backend && yarn start",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
