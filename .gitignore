@@ -21,4 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-backend/celeba/
+backend/celeba/*
+backend/celeba.log
+backend/ratings.json
+backend/rated/*.png
